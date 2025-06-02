@@ -1,0 +1,26 @@
+# Entorno virtual
+venv/
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Variables de entorno
+.env
+.env.local
+.env.development
+.env.test
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs y archivos temporales
+*.log
+*.pot
+*.pyc
+__pycache__
