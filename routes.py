@@ -3,6 +3,10 @@ from app import app, db
 from models import Usuario
 from flask import render_template, redirect, url_for
 
+@app.route('/')  # Nueva ruta raíz
+def index():
+    return redirect(url_for('usuarios'))
+
 @app.route('/add_user/<nombre>/<email>')
 def add_user(nombre, email):
     usuario = Usuario(nombre=nombre, email=email)
